@@ -1,3 +1,4 @@
+function MainRun {
 $UpdaterZipFiles="ControlzEx.dll
 MahApps.Metro.dll
 Patcher.exe
@@ -1133,4 +1134,6 @@ Remove-Variable BFfile_bad
 Remove-Variable UPfile_bad
 
 Read-Host -Prompt 'Complete - Press Enter to exit'
+}
 
+MainRun
