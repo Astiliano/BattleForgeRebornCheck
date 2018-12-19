@@ -16,6 +16,8 @@ PS C:\Users\Astiliano>
 
 Open the script in raw format
 
+(First 1000~ lines are just a list! Scroll to the bottom for the actual logic)
+
 https://raw.githubusercontent.com/Astiliano/BattleForgeRebornCheck/master/BFcheck.ps1
 
 Look over the script to make sure it isn't malicious (No deleting, removing, searching random stuff)
