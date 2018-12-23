@@ -1135,5 +1135,5 @@ Remove-Variable UPfile_bad
 
 Read-Host -Prompt 'Complete - Press Enter to exit'
 }
-
+clear
 MainRun
