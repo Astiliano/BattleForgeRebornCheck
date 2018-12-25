@@ -1127,8 +1127,8 @@ foreach ($BFfile in $BattleForgeRarFiles.Split("`r`n")) {
 }
 
 Echo "`n`n------------- Final Results -------------`n`n"
-Echo "##### Missing Updater.zip files:`n$UPfile_bad`n`n"
-Echo "##### Missing BattleForge.rar files:`n$BFfile_bad`n`n"
+Echo "##### Missing the following Updater.zip files:`n$UPfile_bad`n`n"
+Echo "##### Missing the following BattleForge.rar files:`n$BFfile_bad`n`n"
 
 Remove-Variable BFfile_bad
 Remove-Variable UPfile_bad
