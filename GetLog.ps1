@@ -8,7 +8,8 @@ Write-Output "`t###First 30 Lines:"
 Get-Content "$log_path" | select -First 30
 
 Write-Output "`n`n`t###Searching for 'WARN', 'ERROR', 'DEBUG', and removing 'Not enough different creep entities' from results, getting uniques and showing last 15 error/warn types"
-Get-Content "$log_path" | Select-String -Pattern 'ERROR|WARN|DEBUG' | Select-String -Pattern 'Not enough different creep entities' -NotMatch | Get-Unique -AsString | select -Last 15
+$grab = Get-Content "$log_path" 
+$grab  -replace '\[(\d|:)+\]','' | Select-String -Pattern 'ERROR|WARN|DEBUG'| Select-String -Pattern 'Not enough different creep entities' -NotMatch | Select-Object -Unique | select -Last 15 
 } Else {
 Write-Output "Unable to verify $log_path - make sure it exists"
 }
